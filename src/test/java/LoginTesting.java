@@ -18,8 +18,10 @@ import java.time.Duration;
 public class LoginTesting{
 
     public static void logInFunctionality(String username, String password){
+
+         WebDriverManager.chromedriver().setup();
         //using ChromeDriver 122.0.6261.69.
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\suraj\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        // System.setProperty("webdriver.chrome.driver", "C:\\Users\\suraj\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
